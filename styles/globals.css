@@ -1,3 +1,14 @@
+:root {
+  --light-pink: #faebf0;
+  --pink: #edb6c8;
+  --pink-dark: #cba9a9;
+  --black: #090705;
+  --brown: #58432a;
+  --red: #b8403b;
+  --yellow: #bfa453;
+  --pink-darkest: #b07c74;
+}
+
 html,
 body {
   padding: 0;
