@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rufina:wght@400;700&display=swap");
+
 :root {
   --light-pink: #faebf0;
   --pink: #edb6c8;
@@ -7,14 +9,16 @@
   --red: #b8403b;
   --yellow: #bfa453;
   --pink-darkest: #b07c74;
+  /* --cta: #d64374; */
+  --box-shadow: 0px 200px 300px -104px rgba(184, 64, 59, 1);
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Rufina", serif, "PT Serif";
+  font-size: 62.5%;
 }
 
 a {
@@ -24,4 +28,43 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.cta {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: var(--red);
+  color: var(--light-pink);
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  letter-spacing: 0.15rem;
+}
+
+.cta:hover,
+.cta:focus {
+  background: var(--pink-darkest);
+}
+
+.cta:focus {
+  outline: 1px solid var(--light-pink);
+  outline-offset: -4px;
+}
+
+.cta:active {
+  transform: scale(0.99);
+}
+
+@media screen and (min-width: 900px) {
+  html,
+  body {
+    font-size: 56.25%;
+  }
 }
