@@ -9,6 +9,8 @@
   top: 0;
   color: var(--black);
   font-size: 1.6rem;
+  z-index: 90;
+  font-family: "Rufina";
 }
 
 .item {

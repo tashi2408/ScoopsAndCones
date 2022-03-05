@@ -23,6 +23,7 @@ export default function Slider() {
       setIndex(index !== 2 ? index + 1 : 0);
     }
   };
+  console.log(index);
   return (
     <div className={styles.container}>
       <div
@@ -30,10 +31,18 @@ export default function Slider() {
         style={{ left: 0 }}
         onClick={() => handleArrow("1")}
       >
-        <Image src="/img/arrow.png" alt="img" layout="fill" />
+        <Image
+          src="/img/arrow.png"
+          alt="img"
+          layout="fill"
+          objectFit="contain"
+        />
       </div>
 
-      <div className={styles.wrapper}>
+      <div
+        className={styles.wrapper}
+        style={{ transform: `translatex(${-100 * index}vw)` }}
+      >
         {slides.map((info, i) => (
           <div key={i} className={styles.wrapperContainer}>
             <div className={styles.text}>

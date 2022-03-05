@@ -17,7 +17,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Rufina", serif, "PT Serif";
+  /* font-family: "Rufina"; */
+  font-family: serif, "PT Serif";
   font-size: 62.5%;
 }
 
